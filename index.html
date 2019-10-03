@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 6</title>
+    <link rel="stylesheet" href="./vendors/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="./src/DOMGui.js"></script>
+    <script src="./src/MultimediaPlayer.js"></script>
+    <script src="./src/AudioPlayer.js"></script>
+    
+</head>
+<body>
+    <div id="player">
+        <div id="main">
+          <div>
+            <div class="playback_controls">
+              <h2 id="title">Title</h2>
+              <h3 id="artist">Perigee</h3> <!--h3 id="album">Perigee</h3-->
+              <div class="time-holder">
+                <div id="time trascurrido">00:00</div>
+                <div class="slider">
+                  <div class="fill"></div>
+                </div>
+                <div id="time final">00:00</div>
+              </div>
+              <div>
+              <i class="fa fa-bars menu"></i>
+              <div class="buttons">
+                <i class="fa fa-backward" id="back"></i>
+                <i class="fa fa-play loading" id="playpause"></i>
+                <i class="fa fa-forward" id="next"></i>
+              </div>
+            </div>
+            </div>
+            <audio controls></audio>
+          </div>
+        </div>
+        <ol id="playlist" draggable="true">
+          <li class="playing"><a class="track"  data-href="./assets/songs/love_jaimesYoung.mp3" draggable="true"><span class="title">love</span> - <span class="artist">jaimesYoung</span></a> <span class="time"></span></li>
+          <li><a class="track"  data-href="./assets/songs/dancing_aaronSmith.mp3" draggable="true"><span class="title">dancing</span> - <span class="artist">aaronSmith</span></a> <span class="time"></span></li>
+          <li><a class="track"  data-href="./assets/songs/thunder_imagineDragons.mp3" draggable="true"><span class="title">thunder</span> - <span class="artist">imagineDragons</span></a> <span class="time"></span></li>
+          </ol>
+      </div>
+      <!--span>Based on: <a href="http://codepen.io/drewvosburg/pen/YyvwJY">This</a></span-->
+      <script src="src/main.js"></script>
+</body>
+</html>
